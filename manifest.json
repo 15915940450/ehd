@@ -1,0 +1,24 @@
+{
+
+  "manifest_version": 2,
+  "name": "ehd",
+  "version": "1.0",
+
+  "description": "1396ck || https://developer.mozilla.org/zh-TW/Add-ons/WebExtensions/Your_first_WebExtension",
+
+  "icons": {
+    "48": "icons/ehd-48.png"
+  },
+
+  "permissions": [
+    "webRequest",
+    "http://m.1396ck.com/"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.baidu.com/"],
+      "js": ["jquery.min.js","echarts.min.js","ehd.js"]
+    }
+  ]
+
+}
